@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  user-drag: none;
+}
+
+.grid {
+  display: grid;
+
+  &.rows {
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  &.cols {
+    grid-template-columns: repeat(16, 1fr);
+  }
+
+  &.gap {
+    grid-gap: $unit;
+  }
+
+  &.padding {
+    padding: $unit;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+  user-select: none;
+}
+
+span,
+a,
+button,
+p {
+  font-family: 'Neue';
+  font-size: 14px;
+  color: map-get($colors, 'offblack');
+}
+
+button {
+  text-decoration: underline;
+}
+
+a,
+button {
+  text-transform: uppercase;
+  font-weight: 500;
+}

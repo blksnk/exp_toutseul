@@ -1,0 +1,16 @@
+$unit: 20px;
+$unit-vh: 0.01953125vh;
+$img-ratio: 1.53125;
+
+$colors: (
+  'offblack': #212121,
+  'black': #111,
+  'white': #fff,
+  'offwhite': #f1f1f1,
+  'grey': #c4c4c4
+);
+
+:root {
+  --unit: 20px;
+  --img-ratio: 1.53125;
+}
